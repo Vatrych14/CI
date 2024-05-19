@@ -1,10 +1,6 @@
-import test from 'ava';
+const test = require('ava');
+const sum = require('../sum');
 
-test('foo', t => {
-  t.pass();
-});
-
-test('bar', async t => {
-  const bar = Promise.resolve('bar');
-  t.is(await bar, 'bar');
+test('sum function', t => {
+  t.is(sum(1, 2), 3);
 });
