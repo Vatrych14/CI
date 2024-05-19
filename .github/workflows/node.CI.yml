@@ -36,5 +36,6 @@ jobs:
       run: npm install mocha
 
     - name: Run tests
-      run: mocha --recursive ./test
+      run: npx mocha --recursive ./test
+
       #run: 'npm test'
