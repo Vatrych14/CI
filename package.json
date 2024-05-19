@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha"
+    "test": "ava"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +16,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "nvm": "^0.0.4",
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
-    "mocha": "^10.2.0",
-    "nodemon": "^2.0.15"
+    "ava": "^6.1.2"
   }
 }
