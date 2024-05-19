@@ -10,7 +10,7 @@ on:
     types: [ opened, synchronize ]
   workflow_dispatch:
 jobs:
-  permanent_actions:
+  #permanent_actions:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
