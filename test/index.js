@@ -1,8 +1,10 @@
-const assert = require('assert');
-const sum = require('../sum');
+import test from 'ava';
 
-describe('Sum Function', function() {
-  it('should return 3 when adding 1 and 2', function() {
-    assert.strictEqual(sum(1, 2), 3);
-  });
+test('foo', t => {
+  t.pass();
+});
+
+test('bar', async t => {
+  const bar = Promise.resolve('bar');
+  t.is(await bar, 'bar');
 });
