@@ -32,6 +32,9 @@ jobs:
     - name: Install Dependencies
       run: 'npm install'
 
+    - name: Install Mocha
+      run: npm install mocha
+
     - name: Run tests
       run: mocha --recursive ./test
       #run: 'npm test'
